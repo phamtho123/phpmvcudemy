@@ -1,0 +1,55 @@
+[17-Jun-2022 15:09:35 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:20:05 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:21:22 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:21:24 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:21:31 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:21:32 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:21:32 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:25:05 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:25:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "Home/inde.html" (looked into: ../App/Views).'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php(161): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(351): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->getTemplateClass()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#5 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#6 /var/www/thopham.test/App/Controllers/Home.php(50): Core\View::renderTemplate()
+#7 [internal function]: App\Controllers\Home->indexAction()
+#8 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#9 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#10 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#11 {main}
+Thrown in '/var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php' on line 265
+[17-Jun-2022 15:36:58 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[17-Jun-2022 15:38:12 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'Method neeAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#1 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#2 {main}
+Thrown in '/var/www/thopham.test/Core/Controller.php' on line 53
