@@ -77,14 +77,39 @@ class Posts extends \Core\Controller
         $cond = "posts.id='$id'";
         $tilte = $_POST['title'];
         $content = $_POST['content'];
+        $image = $_FILES['image']['name'];
+        $tmp_image = $_FILES['image']['tmp_name'];
+        $div = explode('.',$image);
+        $file_ext = strtolower(end($div));
+        $unique_image = $div[0].time().'.'.$file_ext;
+        $path_uploads = "/var/www/thopham.test/public/uploads/post/".$unique_image;
 
-        $data = array(
-            'title' => $tilte,
-            'content' => $content
-        );
-
+        if($image){
+            $cond = "posts.id='$id'";
+            $data['postbyid'] =  Post::getPostById($table,$cond);
+            print_r($data);
+            foreach($data['postbyid'] as $key =>$value){
+                if($value['image']){
+                    unlink("/var/www/thopham.test/public/uploads/post/".$value['image']);
+                }
+            }
+          
+            $data = array(
+                'title' => $tilte,
+                'content' => $content,
+                'image' => $unique_image
+            );
+            move_uploaded_file($tmp_image,$path_uploads);
+        }else {
+            $data = array(
+                'title' => $tilte,
+                'content' => $content,
+               // 'image' => $image
+            );
+        }
         $isUpdated = Post::updatePost($table,$cond,$data);
         if($isUpdated) {
+            //  move_uploaded_file($tmp_image,$path_uploads);
             return $this->redirect('http://thopham.test/?posts/index');
         }
     }

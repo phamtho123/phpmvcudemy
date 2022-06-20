@@ -4,7 +4,7 @@
 {% block body %}
     <div class="col-md-12">
     {% for post in posts %}
-        <form action="/?posts/{{post.id}}/updatePost" method="POST" >
+        <form action="/?posts/{{post.id}}/updatePost" method="POST" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="email">Tên bài Post</label>
                 <input type="text" value="{{post.title}}" name="title"  class="form-control" >
