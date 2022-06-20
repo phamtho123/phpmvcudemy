@@ -48,7 +48,7 @@ class Home extends \Core\Controller
         */
         View::renderTemplate('Home/index.html', [
             'name'    => 'Tho',
-            'colours' => ['red', 'green', 'blue']
+            'colours' => ['Ôn kiến thức cơ bản php', 'Code Project bằng PHP', 'Mô hình MVC']
         ]);
     }
 }
