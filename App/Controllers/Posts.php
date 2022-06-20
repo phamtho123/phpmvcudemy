@@ -12,7 +12,7 @@ class Posts extends \Core\Controller
     public function indexAction()
     {
         $posts = Post::getAll();
-        View::renderTemplate('Posts/index.php',[
+        View::renderTemplate('Posts/index.html',[
             'posts' => $posts
         ]);
    
@@ -20,7 +20,7 @@ class Posts extends \Core\Controller
 
     public function addPostAction()
     {
-        View::renderTemplate('Posts/add.php');
+        View::renderTemplate('Posts/add.html');
     }
 
     public function insertPostAction()
@@ -64,7 +64,7 @@ class Posts extends \Core\Controller
         $table = "posts";
         $cond = "posts.id='$id'";
         $data = Post::getPostById($table,$cond);
-        View::renderTemplate('Posts/edit.php', [
+        View::renderTemplate('Posts/edit.html', [
             'posts' => $data
         ]);
     }

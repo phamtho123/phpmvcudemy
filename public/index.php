@@ -22,7 +22,7 @@ spl_autoload_register(function ($class) {
 
 // if ($router->matchs($url)) {
 //     echo '<pre>';
-//     var_dump($router->getParams());
+//     var_dump($router->getParams());var_dump($router->getParams());
 //     echo '</pre>';
 // } else {
 //     echo "No route found for URL '$url'";

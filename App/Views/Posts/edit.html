@@ -1,0 +1,29 @@
+{% extends "Posts/base.html" %}
+{% block tilte %}Thêm bài Post{% endblock %}
+
+{% block body %}
+    <div class="col-md-12">
+    {% for post in posts %}
+        <form action="/?posts/{{post.id}}/updatePost" method="POST" >
+            <div class="form-group">
+                <label for="email">Tên bài Post</label>
+                <input type="text" value="{{post.title}}" name="title"  class="form-control" >
+            </div>
+            <div class="form-group">
+                <label for="pwd">Hình ảnh sản phẩm</label>
+                <input type="file" name="image" class="form-control">
+                <img src="http://thopham.test/uploads/post/{{post.image}}"
+                        height="100px" width="100px">
+            </div>
+            <div class="form-group">
+                <label for="email">Nội dung Post</label>
+                <input type="text" value="{{post.content}}" name="content"  class="form-control" >
+            </div>
+            <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-default">Cập nhật danh mục</button>
+        </form>
+    {% endfor %}
+    </div>
+{% endblock %}
