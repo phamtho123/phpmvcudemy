@@ -6,47 +6,111 @@ namespace App\Controllers;
 use \Core\View;
 use App\Models\Post;
 
-
-
 class Posts extends \Core\Controller
 {
 
-    /**
-     * Show the index page
-     *
-     * @return void
-     */
     public function indexAction()
     {
         $posts = Post::getAll();
-
-        // print_r($posts);
-
-        View::renderTemplate('Posts/index.html',[
+        View::renderTemplate('Posts/index.php',[
             'posts' => $posts
         ]);
-        // View::renderTemplate('Posts/index.html');
+   
     }
 
-    /**
-     * Show the add new page
-     *
-     * @return void
-     */
-    public function addNewAction()
+    public function addPostAction()
     {
-        echo 'Hello from the addNew action in the Posts controller!';
+        View::renderTemplate('Posts/add.php');
     }
-    
-    /**
-     * Show the edit page
-     *
-     * @return void
-     */
-    public function editAction()
+
+    public function insertPostAction()
     {
-        echo 'Hello from the edit action in the Posts controller!';
-        echo '<p>Route parameters: <pre>' .
-             htmlspecialchars(print_r($this->route_params, true)) . '</pre></p>';
+        $tilte = $_POST['title'];
+        $content = $_POST['content'];
+        $image = $_FILES['image']['name'];
+        $tmp_image = $_FILES['image']['tmp_name'];
+        $div = explode('.',$image);
+        $file_ext = strtolower(end($div));
+        $unique_image = $div[0].time().'.'.$file_ext;
+        $path_uploads = "/var/www/thopham.test/public/uploads/post/".$unique_image;
+
+
+        $data = array(
+            'title' => $tilte,
+            'image' =>  $unique_image,
+            'content' => $content,
+        );
+
+        $table = 'posts';
+        $isInserted = Post::insertPost($table,$data);
+        if($isInserted) 
+        {
+            move_uploaded_file($tmp_image,$path_uploads);
+            return $this->redirect('http://thopham.test/?posts/index');
+        }
+        
     }
+
+    public function getId($url)
+    {
+        $id = preg_replace('/[^0-9]/','', $url);  
+        return $id;
+    }
+
+    public function editPostAction()
+    {  
+        $url =$_SERVER['QUERY_STRING']; 
+        $id = $this->getId($url);
+        $table = "posts";
+        $cond = "posts.id='$id'";
+        $data = Post::getPostById($table,$cond);
+        View::renderTemplate('Posts/edit.php', [
+            'posts' => $data
+        ]);
+    }
+
+    public function updatePostAction()
+    {
+        $url =$_SERVER['QUERY_STRING']; 
+        $id = $this->getId($url);
+        $table = "posts";
+        $cond = "posts.id='$id'";
+        $tilte = $_POST['title'];
+        $content = $_POST['content'];
+
+        $data = array(
+            'title' => $tilte,
+            'content' => $content
+        );
+
+        $isUpdated = Post::updatePost($table,$cond,$data);
+        if($isUpdated) {
+            return $this->redirect('http://thopham.test/?posts/index');
+        }
+    }
+
+
+    public function deletePostAction()
+    {
+        $url =$_SERVER['QUERY_STRING']; 
+        $id = $this->getId($url);
+        $table = "posts";
+        $cond = "posts.id='$id'";
+        $isDeleted = Post::deletePost($table,$cond);
+        if($isDeleted){
+            return $this->redirect('http://thopham.test/?posts/index');
+        }
+    }
+
+    public function redirect($url)
+    {
+        ?>
+            <script>
+                $url = '<?= $url ?>'
+                window.location.href = $url;
+            </script>
+        <?php
+    }
+
+
 }

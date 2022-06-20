@@ -1,0 +1,1729 @@
+[20-Jun-2022 08:39:03 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A hash key must be a quoted string, a number, a name, or an expression enclosed in parentheses (unexpected token "punctuation" of value "{".'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(291): Twig\ExpressionParser->parseHashExpression()
+#1 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(183): Twig\ExpressionParser->parsePrimaryExpression()
+#2 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(78): Twig\ExpressionParser->getPrimary()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(166): Twig\ExpressionParser->parseExpression()
+#4 /var/www/thopham.test/vendor/twig/twig/src/TokenParser/ForTokenParser.php(51): Twig\Parser->subparse()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ForTokenParser->parse()
+#6 /var/www/thopham.test/vendor/twig/twig/src/TokenParser/BlockTokenParser.php(47): Twig\Parser->subparse()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\BlockTokenParser->parse()
+#8 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#9 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#10 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#11 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#12 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#13 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#14 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#15 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#16 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#17 [internal function]: App\Controllers\Posts->indexAction()
+#18 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#19 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#20 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#21 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 29
+[20-Jun-2022 08:39:33 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A hash key must be a quoted string, a number, a name, or an expression enclosed in parentheses (unexpected token "punctuation" of value "{".'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(291): Twig\ExpressionParser->parseHashExpression()
+#1 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(183): Twig\ExpressionParser->parsePrimaryExpression()
+#2 /var/www/thopham.test/vendor/twig/twig/src/ExpressionParser.php(78): Twig\ExpressionParser->getPrimary()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(166): Twig\ExpressionParser->parseExpression()
+#4 /var/www/thopham.test/vendor/twig/twig/src/TokenParser/ForTokenParser.php(51): Twig\Parser->subparse()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ForTokenParser->parse()
+#6 /var/www/thopham.test/vendor/twig/twig/src/TokenParser/BlockTokenParser.php(47): Twig\Parser->subparse()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\BlockTokenParser->parse()
+#8 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#9 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#10 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#11 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#12 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#13 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#14 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#15 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#16 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#17 [internal function]: App\Controllers\Posts->indexAction()
+#18 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#19 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#20 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#21 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 29
+[20-Jun-2022 08:48:06 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[20-Jun-2022 08:51:39 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[20-Jun-2022 08:53:16 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[20-Jun-2022 09:17:05 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "Posts/index.html" (looked into: ../App/Views).'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php(161): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(351): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->getTemplateClass()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#5 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#6 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#7 [internal function]: App\Controllers\Posts->indexAction()
+#8 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#9 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#10 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#11 {main}
+Thrown in '/var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php' on line 265
+[20-Jun-2022 09:17:07 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\LoaderError' with message 'Unable to find template "Posts/index.html" (looked into: ../App/Views).'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php(161): Twig\Loader\FilesystemLoader->findTemplate()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(351): Twig\Loader\FilesystemLoader->getCacheKey()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->getTemplateClass()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#5 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#6 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#7 [internal function]: App\Controllers\Posts->indexAction()
+#8 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#9 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#10 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#11 {main}
+Thrown in '/var/www/thopham.test/vendor/twig/twig/src/Loader/FilesystemLoader.php' on line 265
+[20-Jun-2022 09:25:40 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'Method addAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#1 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#2 {main}
+Thrown in '/var/www/thopham.test/Core/Controller.php' on line 53
+[20-Jun-2022 09:26:14 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'Method addAction not found in controller App\Controllers\Posts'
+Stack trace: #0 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#1 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#2 {main}
+Thrown in '/var/www/thopham.test/Core/Controller.php' on line 53
+[20-Jun-2022 09:34:01 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:34:02 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:34:02 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:34:55 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:34:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:34:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:55 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:56 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:58 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:59 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:35:59 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:18 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:24 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:26 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:26 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:27 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:27 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:28 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:29 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:37:30 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:28 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:28 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:29 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:29 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:29 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:32 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:33 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:33 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:34 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:34 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:38:35 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:39:52 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:39:52 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'Multiple extends tags are forbidden.'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(209): Twig\TokenParser\ExtendsTokenParser->parse()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(122): Twig\Parser->subparse()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 2
+[20-Jun-2022 09:42:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:00 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:03 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:39 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:39 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:39 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:40 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:40 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:40 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:40 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:40 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:41 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:41 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:41 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:43:41 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(36): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->addPostAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/add.html' on line 2
+[20-Jun-2022 09:51:03 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:04 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:05 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:06 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:29 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:33 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:52 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:53 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:54 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:55 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:57 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:51:58 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:52:00 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:52:01 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:52:02 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:52:11 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:52:13 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:30 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:31 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:32 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:34 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:35 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:53:36 Asia/Krasnoyarsk] Uncaught exception: 'Twig\Error\SyntaxError' with message 'A template that extends another one cannot include content outside Twig blocks. Did you forget to put the content inside a {% block %} tag?'
+Stack trace: #0 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(430): Twig\Parser->filterBodyNodes()
+#1 /var/www/thopham.test/vendor/twig/twig/src/Parser.php(124): Twig\Parser->filterBodyNodes()
+#2 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(735): Twig\Parser->parse()
+#3 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(793): Twig\Environment->parse()
+#4 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(482): Twig\Environment->compileSource()
+#5 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(445): Twig\Environment->loadClass()
+#6 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(423): Twig\Environment->loadTemplate()
+#7 /var/www/thopham.test/vendor/twig/twig/src/Environment.php(384): Twig\Environment->load()
+#8 /var/www/thopham.test/Core/View.php(52): Twig\Environment->render()
+#9 /var/www/thopham.test/App/Controllers/Posts.php(24): Core\View::renderTemplate()
+#10 [internal function]: App\Controllers\Posts->indexAction()
+#11 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#12 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#13 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#14 {main}
+Thrown in '/var/www/thopham.test/App/Views/Posts/index.html' on line 1
+[20-Jun-2022 09:58:23 Asia/Krasnoyarsk] Uncaught exception: 'Exception' with message 'No route matched.'
+Stack trace: #0 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#1 {main}
+Thrown in '/var/www/thopham.test/Core/Router.php' on line 133
+[20-Jun-2022 10:12:08 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->insertPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:22:33 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(19): App\Models\Post::getAll()
+#1 /var/www/thopham.test/App/Controllers/Posts.php(55): App\Controllers\Posts->indexAction()
+#2 [internal function]: App\Controllers\Posts->insertPostAction()
+#3 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#4 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#5 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#6 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:24:18 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(52): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->insertPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:24:29 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(52): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->insertPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:24:40 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(52): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->insertPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:24:43 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(52): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->insertPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 10:25:19 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:26:19 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:27:47 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:27:51 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:12 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:14 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:40 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:43 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:43 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:43 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:44 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:28:44 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:29:20 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::deletePostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->deletePostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 63
+[20-Jun-2022 10:34:56 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 10:34:58 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 10:35:00 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 10:35:03 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 10:35:06 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 10:37:34 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:37:38 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:37:45 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:37:45 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:37:45 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:42:59 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: id'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(51): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(38): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 51
+[20-Jun-2022 10:56:11 Asia/Krasnoyarsk] Uncaught exception: 'ArgumentCountError' with message 'Too few arguments to function App\Controllers\Posts::editPostAction(), 0 passed and exactly 1 expected'
+Stack trace: #0 [internal function]: App\Controllers\Posts->editPostAction()
+#1 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#2 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#3 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#4 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 49
+[20-Jun-2022 11:02:35 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Non-static method Core\Router::match() should not be called statically'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(54): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 54
+[20-Jun-2022 11:02:39 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Non-static method Core\Router::match() should not be called statically'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(54): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 54
+[20-Jun-2022 11:05:46 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Array to string conversion'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(54): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 54
+[20-Jun-2022 11:12:00 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Array to string conversion'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(60): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 60
+[20-Jun-2022 11:12:01 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Array to string conversion'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(60): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->editPostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 60
+[20-Jun-2022 11:56:18 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: content'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(75): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 75
+[20-Jun-2022 11:57:11 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: content'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(75): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 75
+[20-Jun-2022 11:57:14 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: content'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(75): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 75
+[20-Jun-2022 11:57:49 Asia/Krasnoyarsk] Uncaught exception: 'ErrorException' with message 'Undefined index: content'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(75): Core\Error::errorHandler()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Controllers/Posts.php' on line 75
+[20-Jun-2022 13:04:44 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(84): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17
+[20-Jun-2022 13:05:39 Asia/Krasnoyarsk] Uncaught exception: 'Error' with message 'Call to a member function query() on null'
+Stack trace: #0 /var/www/thopham.test/App/Controllers/Posts.php(86): App\Models\Post::getAll()
+#1 [internal function]: App\Controllers\Posts->updatePostAction()
+#2 /var/www/thopham.test/Core/Controller.php(48): call_user_func_array()
+#3 /var/www/thopham.test/Core/Router.php(121): Core\Controller->__call()
+#4 /var/www/thopham.test/public/index.php(51): Core\Router->dispatch()
+#5 {main}
+Thrown in '/var/www/thopham.test/App/Models/Post.php' on line 17

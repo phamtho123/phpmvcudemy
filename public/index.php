@@ -17,6 +17,19 @@ spl_autoload_register(function ($class) {
 });
 
 
+// $url =$_SERVER['QUERY_STRING'];
+// echo $url;  
+
+// if ($router->matchs($url)) {
+//     echo '<pre>';
+//     var_dump($router->getParams());
+//     echo '</pre>';
+// } else {
+//     echo "No route found for URL '$url'";
+    
+// }
+
+
 /**
  * Error 
  */

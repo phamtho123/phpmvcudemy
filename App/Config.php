@@ -12,6 +12,6 @@ class Config
 
     const DB_PASSWORD = 'TvaT2201@';
 
-    const SHOW_ERRORS = false;
+    const SHOW_ERRORS = true;
 
 }

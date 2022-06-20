@@ -11,17 +11,8 @@ abstract class Model
     protected static function getDB()
     {
         static $db = null;
-        
-        if($db === null) {
-            // $host = 'phpmyadmin.test';
-            // $dbname = 'mvcudemy';
-            // $username = 'root';
-            // $password = 'TvaT2201@';
-
             
             try {
-                // $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8",
-                // $username, $password);
 
                 $dsn = 'mysql:host=' .Config::DB_HOST . ';dbname=' . Config::DB_NAME . ';charset=utf8';
 
@@ -35,7 +26,5 @@ abstract class Model
             }catch(PDOException $e){
                 echo $e->getMessage();
             }
-        
-        }
     }
 }
